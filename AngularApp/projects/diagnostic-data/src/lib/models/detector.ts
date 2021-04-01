@@ -180,6 +180,7 @@ export interface TimeSeriesRendering extends Rendering {
     timestampColumnName: string;
     counterColumnName: string;
     seriesColumns: string[];
+    showMetrics: boolean;
 }
 
 export interface TimeSeriesPerInstanceRendering extends Rendering {
@@ -193,6 +194,7 @@ export interface TimeSeriesPerInstanceRendering extends Rendering {
     instanceFilter: string[];
     counterNameFilter: string[];
     selectedInstance: string;
+    showMetrics: boolean;
 }
 
 export interface InsightsRendering extends Rendering {
