@@ -121,7 +121,7 @@ import { HighChartsHoverService } from './services/highcharts-hover.service';
 import { RouterModule } from '@angular/router';
 import { FabDataTableComponent } from './components/fab-data-table/fab-data-table.component';
 import { FabCardComponent } from './components/fab-card/fab-card.component';
-import { SolutionPanelComponent } from './components/solution-panel/solution-panel.component';
+import { SolutionsPanelComponent } from './components/solutions-panel/solutions-panel.component';
 import { DetectorTimePickerComponent } from './components/detector-time-picker/detector-time-picker.component';
 
 @NgModule({
@@ -206,7 +206,7 @@ import { DetectorTimePickerComponent } from './components/detector-time-picker/d
     ConvertLevelToHealthStatusPipe,
     FabCardComponent,
     FabDataTableComponent,
-    SolutionPanelComponent,
+    SolutionsPanelComponent,
     DetectorTimePickerComponent
   ],
   entryComponents: [DetectorListAnalysisComponent],
