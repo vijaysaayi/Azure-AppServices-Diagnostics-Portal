@@ -181,7 +181,7 @@ export interface TimeSeriesRendering extends Rendering {
     timestampColumnName: string;
     counterColumnName: string;
     seriesColumns: string[];
-    showMetrics: boolean;
+    metricType: MetricType;
 }
 
 export interface TimeSeriesPerInstanceRendering extends Rendering {
@@ -195,7 +195,7 @@ export interface TimeSeriesPerInstanceRendering extends Rendering {
     instanceFilter: string[];
     counterNameFilter: string[];
     selectedInstance: string;
-    showMetrics: boolean;
+    metricType: MetricType;
 }
 
 export interface InsightsRendering extends Rendering {
@@ -263,3 +263,11 @@ export const DowntimeInteractionSource = {
     DefaultFromQueryParams: 'DefaultFromQueryParams',
     DefaultFromUI: 'DefaultFromUI'
 };
+
+export enum MetricType {
+        None,
+        Avg,
+        Min,
+        Max,
+        Sum,
+}
