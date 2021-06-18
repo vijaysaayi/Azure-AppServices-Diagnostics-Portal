@@ -153,6 +153,7 @@ export interface DataTableRendering extends Rendering {
     height: any;
     allowColumnSearch: boolean;
     columnOptions: TableColumnOption[];
+    searchPlaceholder: string;
 }
 
 export enum TableFilterSelectionOption {
