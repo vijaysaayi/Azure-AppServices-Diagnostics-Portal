@@ -68,6 +68,7 @@ namespace AppLensV3
             services.AddSingleton<ICosmosDBHandler<ResourceConfig>, CosmosDBHandler<ResourceConfig>>();
             services.AddSingleton<IIncidentAssistanceService, IncidentAssistanceService>();
             services.AddSingleton<IResourceConfigService, ResourceConfigService>();
+            services.AddSingleton<IHealthCheckService, HealthCheckService>();
 
             services.AddMemoryCache();
             services.AddMvc();
