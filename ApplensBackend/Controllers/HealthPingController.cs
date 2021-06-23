@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 namespace AppLensV3.Controllers
 {
     [Route("api")]
+    [Produces("application/json")]
     public class HealthPingController : Controller
     {   
         [HttpGet("healthping")]
         public IActionResult HealthPing()
         {
-            return Ok("App is running");
+            var netCoreVer = Environment.Version;
+            var runtimeVer = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
+            return Ok($"Server is up and running. .NET Core Version : {netCoreVer}, Runtime Version : {runtimeVer} ");
         }
     }
 }
