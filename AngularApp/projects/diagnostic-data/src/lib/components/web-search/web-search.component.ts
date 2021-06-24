@@ -36,7 +36,7 @@ export class WebSearchComponent extends DataRenderBaseComponent implements OnIni
     pesId : string = "";
 
     supportTopicId : string = "";    
-
+    
     customQueryParametersForBingSearch : string = "";
 
     searchTermDisplay: string = '';
@@ -340,6 +340,10 @@ export class WebSearchComponent extends DataRenderBaseComponent implements OnIni
 
     showRemainingArticles(){
         this.viewRemainingArticles =!this.viewRemainingArticles
+        if(this.viewRemainingArticles)
+        {
+            this.logEvent(TelemetryEventNames.ShowMoreWebQueryResultsClicked, { searchId: this.searchId, searchTerm: this.searchTerm, ts: Math.floor((new Date()).getTime() / 1000).toString() });
+        }
       }
 
     getPesId(){
