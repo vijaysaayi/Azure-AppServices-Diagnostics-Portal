@@ -342,7 +342,7 @@ export class WebSearchComponent extends DataRenderBaseComponent implements OnIni
         this.viewRemainingArticles =!this.viewRemainingArticles
         if(this.viewRemainingArticles)
         {
-            this.logEvent(TelemetryEventNames.ShowMoreWebQueryResultsClicked, { searchId: this.searchId, searchTerm: this.searchTerm, ts: Math.floor((new Date()).getTime() / 1000).toString() });
+            this.logEvent(TelemetryEventNames.MoreWebResults, { searchId: this.searchId, searchTerm: this.searchTerm, ts: Math.floor((new Date()).getTime() / 1000).toString() });
         }
       }
 

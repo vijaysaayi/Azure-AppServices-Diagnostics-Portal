@@ -37,7 +37,7 @@ export const TelemetryEventNames = {
     SearchComponentVisible: "SearchComponentVisible",
     WebQueryResults: 'WebQueryResults',
     WebQueryResultClicked: 'WebQueryResultClicked',
-    ShowMoreWebQueryResultsClicked : 'ShowMoreWebQueryResultsClicked',
+    MoreWebResults : 'MoreWebResults',
     AuthorSelectSearchTerm: 'AuthorSelectSearchTerm',
     AuthorCreateSearchTerm: 'AuthorCreateSearchTerm',
     AuthorRemoveSearchTerm: 'AuthorRemoveSearchTerm',
